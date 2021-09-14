@@ -1,0 +1,40 @@
+{
+  "name": "Questions",
+  "fields": [
+    {
+      "fieldName": "formId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "annexure",
+      "otherEntityRelationshipName": "questions",
+      "relationshipName": "annexure",
+      "ownerSide": true
+    }
+  ],
+  "entityTableName": "questions",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210914124329"
+}

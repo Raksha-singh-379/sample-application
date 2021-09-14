@@ -43,7 +43,9 @@
     "devServerPort": 4200,
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "reactive": false
+    "reactive": false,
+    "entities": ["Questions", "Annexure"],
+    "lastLiquibaseTimestamp": 1631623410000
   },
   "git-provider": "GitHub",
   "git-company": "Raksha-singh-379",

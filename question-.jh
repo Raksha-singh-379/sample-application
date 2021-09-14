@@ -1,0 +1,22 @@
+
+entity Questions {
+	FormId String
+    Type String
+    SubType String
+    Description String
+    
+}
+
+entity Annexure {
+	Answer Boolean
+    Comment String
+}
+relationship OneToOne {
+	Questions{annexure} to Annexure
+}
+
+dto Questions, Annexure with mapstruct
+service all with serviceImpl 
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
